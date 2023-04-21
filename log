@@ -33,3 +33,37 @@ Fri 21 Apr 2023 01:05:58 PM UTC:
  tests:  4|7
 total_score: 5/70
 ad34ca6
+Fri 21 Apr 2023 01:33:43 PM UTC: 
+ treemap.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:3: error: ‘key2’ undeclared (first use in this function); did you mean ‘key’?
+   76 |   key2=key;
+      |   ^~~~
+      |   key
+treemap.c:76:3: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:78:3: error: ‘key1’ undeclared (first use in this function); did you mean ‘key’?
+   78 |   key1=tree->current->pair->key;
+      |   ^~~~
+      |   key
+treemap.c:81:32: error: expected ‘)’ before ‘}’ token
+   81 |     if(is_equal(tree,key1,key2)}==1){
+      |       ~                        ^
+      |                                )
+treemap.c:81:32: error: expected expression before ‘}’ token
+treemap.c:81:33: error: expected expression before ‘==’ token
+   81 |     if(is_equal(tree,key1,key2)}==1){
+      |                                 ^~
+treemap.c:81:36: error: expected statement before ‘)’ token
+   81 |     if(is_equal(tree,key1,key2)}==1){
+      |                                    ^
+treemap.c: At top level:
+treemap.c:93:3: error: expected identifier or ‘(’ before ‘return’
+   93 |   return NULL;
+      |   ^~~~~~
+treemap.c:94:1: error: expected identifier or ‘(’ before ‘}’ token
+   94 | }
+      | ^
+Compilation failed
+c30dc9e
