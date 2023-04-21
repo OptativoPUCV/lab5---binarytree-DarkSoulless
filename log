@@ -255,3 +255,14 @@ Fri 21 Apr 2023 11:20:33 PM UTC:
  tests:  7|7
 total_score: 5/70
 dac6323
+Fri 21 Apr 2023 11:21:30 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:75:3: error: ‘aux’ undeclared (first use in this function)
+   75 |   aux = tree->root;
+      |   ^~~
+treemap.c:75:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+07bca33
