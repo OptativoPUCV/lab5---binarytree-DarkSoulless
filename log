@@ -121,3 +121,16 @@ Fri 21 Apr 2023 11:05:56 PM UTC:
  tests:  6|7
 total_score: 5/70
 cce910e
+Fri 21 Apr 2023 11:08:55 PM UTC: 
+ treemap.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:83:21: error: expected ‘;’ before ‘}’ token
+   83 |       aux=aux->right
+      |                     ^
+      |                     ;
+   84 |     }
+      |     ~                
+Compilation failed
+d80bc7d
