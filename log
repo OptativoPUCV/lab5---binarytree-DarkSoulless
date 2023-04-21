@@ -196,3 +196,32 @@ Fri 21 Apr 2023 11:14:44 PM UTC:
 Cannot create temporary file in /tmp/: Disk quota exceeded
 Compilation failed
 75a15ae
+Fri 21 Apr 2023 11:16:58 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:75:18: error: initialization of ‘TreeMap *’ from incompatible pointer type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+   75 |   TreeMap *aux = tree->root;
+      |                  ^~~~
+treemap.c:76:16: error: assignment to ‘TreeNode *’ from incompatible pointer type ‘TreeMap *’ [-Werror=incompatible-pointer-types]
+   76 |   tree->current=aux;
+      |                ^
+treemap.c:80:25: error: ‘TreeMap’ has no member named ‘pair’
+   80 |     if(is_equal(tree,aux->pair->key,key)==1){
+      |                         ^~
+treemap.c:81:18: error: ‘TreeMap’ has no member named ‘pair’
+   81 |       return (aux->pair);
+      |                  ^~
+treemap.c:83:28: error: ‘TreeMap’ has no member named ‘pair’
+   83 |     if(tree->lower_than(aux->pair->key,key)==0){
+      |                            ^~
+treemap.c:84:14: error: ‘TreeMap’ has no member named ‘right’
+   84 |       aux=aux->right;
+      |              ^~
+treemap.c:87:14: error: ‘TreeMap’ has no member named ‘left’
+   87 |       aux=aux->left;
+      |              ^~
+cc1: all warnings being treated as errors
+Compilation failed
+3ba9fda
