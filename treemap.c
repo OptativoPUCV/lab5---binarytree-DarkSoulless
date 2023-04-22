@@ -50,7 +50,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   if(aux==NULL) return;
   TreeNode *new=createTreeNode(key, value);
   if(new==NULL) return;
-  if(tree->current=NULL) return;
+  if tree->current=NULL return;
   searchTreeMap(tree, key);
   /*if(tree->lower_than(key,aux2->pair->key)){
     aux2->left=new;
