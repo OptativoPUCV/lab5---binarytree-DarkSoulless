@@ -96,10 +96,6 @@ void removeNode(TreeMap * tree, TreeNode* node) {
   else{
     tree->root = NULL;
   }      
-  if(tree->node->left!=NULL||tree->node->right!=NULL) tree->parent=tree->root;
-  if(tree->node->left!=NULL&&tree->node->right!=NULL){
-    
-  }
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
