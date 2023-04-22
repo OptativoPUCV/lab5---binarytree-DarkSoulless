@@ -431,3 +431,9 @@ treemap.c:61:9: error: ‘TreeNode’ has no member named ‘new’
       |         ^~
 Compilation failed
 7a35503
+Sat 22 Apr 2023 01:30:07 AM UTC: 
+ treemap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  10|6
+total_score: 15/70
+95bf30b
