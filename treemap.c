@@ -49,7 +49,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   Pair *aux = searchTreeMap(tree, key);
   if(aux==NULL) return NULL;
   TreeNode *new=createTreeNode(key, value);
-  if(new==NULL) return NULL;
+  if(new==NULL) return ;
   TreeNode *aux2 = tree->current;
   if(aux2==NULL) tree->root=new;
   if(tree->lower_than(key,aux2->pair->key)){
