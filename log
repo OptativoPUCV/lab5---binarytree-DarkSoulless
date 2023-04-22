@@ -418,3 +418,16 @@ treemap.c:61:8: error: ‘TreeNode’ has no member named ‘aux2’
       |        ^~
 Compilation failed
 bcf88e1
+Sat 22 Apr 2023 01:29:57 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:9: error: ‘TreeNode’ has no member named ‘new’
+   57 |     aux2->new=aux2;
+      |         ^~
+treemap.c:61:9: error: ‘TreeNode’ has no member named ‘new’
+   61 |     aux2->new=aux2;
+      |         ^~
+Compilation failed
+7a35503
