@@ -70,6 +70,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         }
         aux2=aux2->right;
       }
+      tree->root=aux2;
     }
   }
 }
