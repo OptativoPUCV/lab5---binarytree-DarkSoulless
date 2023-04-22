@@ -92,10 +92,11 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       else{
         node->parent->right = NULL;    
       }
-  }    
-  else{
-    tree->root = NULL;
-  }      
+    }
+    else{
+      tree->root = NULL;
+    }
+  }          
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
