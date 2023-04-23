@@ -1194,3 +1194,9 @@ treemap.c:88:8: error: variable ‘der’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 9bc907e
+Sun 23 Apr 2023 01:34:55 AM UTC: 
+ treemap.c | 6 ------
+ 1 file changed, 6 deletions(-)
+ tests:  16|4
+total_score: 30/70
+664b10a
