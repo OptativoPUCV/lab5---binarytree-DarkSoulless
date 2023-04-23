@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 #include "treemap.h"
 
 typedef struct TreeNode TreeNode;
@@ -84,6 +85,8 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
+  bool der=false;
+  bool izq=false;
   if(node->left==NULL&&node->right==NULL){
     if (node->parent != NULL){
       if(node->parent->left == node){
@@ -101,16 +104,22 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     if(node->parent!=NULL){
       if(node->parent->left==node){
         node->parent->left=node->right;
+        der=true;
       }
       else{
         node->parent->left=node->right;
+        der=true;
       }
       if(node->parent->right==node){
         node->parent->right=node->left;
+        izq=true;
       }
       else{
         node->parent->right=node->left;
+        izq=true;
       }
+      if(izq==true) node->right->parent=node->parent;
+      if(der==true) node->left->parent=node->parent;
       free(node->pair);
       free(node);
     }
